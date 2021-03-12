@@ -1,6 +1,6 @@
 module.exports = {
-  "title": "anpai",
-  "description": "安排的博客",
+  "title": "蓝鲸",
+  "description": "蓝鲸的博客",
   "dest": "public",
   "head": [
     [
@@ -47,7 +47,7 @@ module.exports = {
         "items": [
           {
             "text": "GitHub",
-            "link": "https://github.com/recoluan",
+            "link": "https://github.com/crystalcd",
             "icon": "reco-github"
           }
         ]
@@ -86,7 +86,7 @@ module.exports = {
         "link": "https://vuepress-theme-reco.recoluan.com"
       }
     ],
-    "logo": "/logo.png",
+    "logo": "/logo.svg",
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",

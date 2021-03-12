@@ -1,6 +1,6 @@
 module.exports = {
   "title": "蓝鲸",
-  "description": "蓝鲸的博客",
+  "description": "",
   "dest": "public",
   "head": [
     [
@@ -18,21 +18,26 @@ module.exports = {
       }
     ]
   ],
-  "theme": "reco",
+  // "theme": "reco",
+  locales: {
+    '/': {
+      lang: 'zh-CN'
+    }
+  },
   "themeConfig": {
     "nav": [
       {
-        "text": "Home",
+        "text": "首页",
         "link": "/",
         "icon": "reco-home"
       },
       {
-        "text": "TimeLine",
+        "text": "时间轴",
         "link": "/timeline/",
         "icon": "reco-date"
       },
       {
-        "text": "Docs",
+        "text": "文档",
         "icon": "reco-message",
         "items": [
           {
@@ -42,7 +47,7 @@ module.exports = {
         ]
       },
       {
-        "text": "Contact",
+        "text": "联系我",
         "icon": "reco-message",
         "items": [
           {
@@ -65,11 +70,11 @@ module.exports = {
     "blogConfig": {
       "category": {
         "location": 2,
-        "text": "Category"
+        "text": "分类"
       },
       "tag": {
         "location": 3,
-        "text": "Tag"
+        "text": "标签"
       }
     },
     "friendLink": [
@@ -97,5 +102,9 @@ module.exports = {
   },
   "markdown": {
     "lineNumbers": true
-  }
+  },
+  extraWatchFiles: [
+    '.vuepress/styles/*.styl', // 使用相对路径
+    '.vuepress/images/*.svg'
+  ]
 }

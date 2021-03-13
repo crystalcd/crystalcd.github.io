@@ -18,12 +18,6 @@ module.exports = {
       }
     ]
   ],
-  // "theme": "reco",
-  locales: {
-    '/': {
-      lang: 'zh-CN'
-    }
-  },
   "themeConfig": {
     "nav": [
       {
@@ -94,7 +88,7 @@ module.exports = {
     "logo": "/logo.svg",
     "search": true,
     "searchMaxSuggestions": 10,
-    "lastUpdated": "Last Updated",
+    "lastUpdated": "更新时间",
     "author": "crystalcd",
     "authorAvatar": "/avatar.png",
     "record": "****",

@@ -100,20 +100,31 @@ module.exports = {
   extraWatchFiles: [
     '.vuepress/styles/*.styl', // 使用相对路径
   ],
-  plugins: [
-    'meting', {
-      metingApi: "https://api.i-meto.com/meting/api",
+  plugins: {
+    // 鼠标点击特效
+    "meting": {
       meting: {
-        server: 'netease',
-        type: 'playlist',
-        mid: '109951162858378049',
-      },     // 不配置该项的话不会出现全局播放器
+        auto: 'https://music.163.com/#/playlist?id=5312894314',
+        // 当前服务为netease -> 网易
+        server: "netease",
+        // 类型为歌单
+        type: "playlist",
+        // 歌单id
+        mid: "5312894314",
+      },
       aplayer: {
-        fixed: "true",
-        mini: "true",
-        autoplay: "true",
-        theme: "#1297da",
-      }
-    }
-  ],
+        // 歌单为随机
+        order: 'random',
+        // 0为不显示歌词
+        lrcType: 0,
+        // 音量
+        volume: 0.15,
+        // 开启迷你模式
+        mini: true,
+        // 自动播放
+        autoplay: true,
+        theme: "#1297da"
+      },
+    },
+  },
 }

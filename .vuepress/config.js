@@ -97,8 +97,8 @@ module.exports = {
     "lastUpdated": "Last Updated",
     "author": "crystalcd",
     "authorAvatar": "/avatar.png",
-    "record": "xxxx",
-    "startYear": "2017"
+    "record": "****",
+    "startYear": "2021"
   },
   "markdown": {
     "lineNumbers": true

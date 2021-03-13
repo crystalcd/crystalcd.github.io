@@ -2,7 +2,7 @@
   <div class="theme-container" :class="pageClasses">
     <div v-if="!absoluteEncryption">
       <transition name="fade">
-        <whale v-show="firstLoad" class="loading-wrapper"></whale>
+        <whale v-show="true" class="loading-wrapper"></whale>
 <!--                <LoadingPage v-show="firstLoad" class="loading-wrapper" />-->
       </transition>
 
@@ -176,13 +176,7 @@ export default defineComponent({
 <style lang="stylus" scoped>
 .theme-container
   .loading-wrapper
-    position absolute
     z-index 22
-    top 0
-    bottom 0
-    left 0
-    right 0
-    margin auto
   .password-wrapper-out
     position absolute
     z-index 21

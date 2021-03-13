@@ -21,8 +21,9 @@
         </Sidebar>
 
         <Password v-show="!isHasPageKey" :isPage="true" class="password-wrapper-in" key="in"></Password>
-        <div :class="{ 'hide': !isHasPageKey }">
-          <slot></slot>
+
+        <div v-show="showHomePage" :class="{ 'hide': !isHasPageKey }">
+            <slot></slot>
         </div>
       </div>
     </div>
@@ -82,6 +83,8 @@ export default defineComponent({
     const isHasKey = ref(true)
     const isHasPageKey = ref(true)
     const firstLoad = ref(true)
+    const showHomePage = ref(false)
+
 
     const shouldShowSidebar = computed(() => props.sidebarItems.length > 0)
     const absoluteEncryption = computed(() => {
@@ -151,6 +154,9 @@ export default defineComponent({
       setTimeout(() => {
         firstLoad.value = false
         if (sessionStorage.getItem('firstLoad') == undefined) sessionStorage.setItem('firstLoad', false)
+        setTimeout(()=> {
+          showHomePage.value = true
+        },500)
       }, time)
     }
 
@@ -160,8 +166,7 @@ export default defineComponent({
       hasPageKey()
       handleLoading()
     })
-
-    return { isSidebarOpen, absoluteEncryption, shouldShowNavbar, shouldShowSidebar, pageClasses, hasKey, hasPageKey, isHasKey, isHasPageKey, toggleSidebar, firstLoad }
+    return { isSidebarOpen, absoluteEncryption, shouldShowNavbar, shouldShowSidebar, pageClasses, hasKey, hasPageKey, isHasKey, isHasPageKey, toggleSidebar, firstLoad, showHomePage }
   },
 
   watch: {

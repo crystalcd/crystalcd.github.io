@@ -104,13 +104,14 @@ module.exports = {
     // 鼠标点击特效
     "meting": {
       meting: {
-        auto: 'https://music.163.com/#/playlist?id=5312894314',
-        // 当前服务为netease -> 网易
-        server: "netease",
-        // 类型为歌单
-        type: "playlist",
-        // 歌单id
-        mid: "5312894314",
+        // 自动识别
+        auto: 'https://music.163.com/#/song?id=413812448',
+        // // 当前服务为netease -> 网易
+        // server: "netease",
+        // // 类型为歌单
+        // type: "playlist",
+        // // 歌单id
+        // mid: "5312894314",
       },
       aplayer: {
         // 歌单为随机
@@ -118,7 +119,7 @@ module.exports = {
         // 0为不显示歌词
         lrcType: 0,
         // 音量
-        volume: 0.15,
+        volume: 0.5,
         // 开启迷你模式
         mini: true,
         // 自动播放

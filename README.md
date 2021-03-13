@@ -2,7 +2,7 @@
 home: true
 heroText: 星辰大海
 tagline: null
-heroImage: /bg.svg
+# heroImage: /bg.svg
 # heroImageStyle: {
 #   maxWidth: '600px',
 #   width: '100%',

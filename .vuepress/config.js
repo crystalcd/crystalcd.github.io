@@ -105,6 +105,5 @@ module.exports = {
   },
   extraWatchFiles: [
     '.vuepress/styles/*.styl', // 使用相对路径
-    '.vuepress/images/*.svg'
-  ]
+  ],
 }

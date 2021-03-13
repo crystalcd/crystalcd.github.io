@@ -63,13 +63,13 @@ export default {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background-color: deeppink;
+    background-color: #1297da;
     position: absolute;
     bottom: -150px;
     left: 50px;
     border: 5px solid #333;
     box-sizing: border-box;
-    box-shadow: inset 0 -160px mediumvioletred;
+    box-shadow: inset 0 -160px #005cc5;
     opacity: 0.9;
   }
 
@@ -140,7 +140,7 @@ export default {
     top: 0;
     left: 60px;
     border-radius: 50%;
-    background-color: fuchsia;
+    background-color: #81cdf5;
   }
 
   .circle::before {
@@ -151,7 +151,7 @@ export default {
     top: 30px;
     left: -40px;
     border-radius: 50%;
-    background-color: fuchsia;
+    background-color: #1296db;
   }
 
   .circle::after {
@@ -162,7 +162,7 @@ export default {
     top: 30px;
     left: 40px;
     border-radius: 50%;
-    background-color: fuchsia;
+    background-color: #1296db;
   }
 
   .filler {
@@ -172,8 +172,8 @@ export default {
     position: absolute;
     top: 70px;
     left: 28px;
-    background-color: fuchsia;
-    box-shadow: inset 0 -5px purple;
+    background-color: #1296db;
+    box-shadow: inset 0 -5px #005cc5;
   }
 
   .star1 {
@@ -247,7 +247,7 @@ export default {
 
   @keyframes twinkle {
     to {
-      background-color: deeppink;
+      background-color: #1297da;
     }
   }
 

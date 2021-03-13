@@ -2,7 +2,8 @@
   <div class="theme-container" :class="pageClasses">
     <div v-if="!absoluteEncryption">
       <transition name="fade">
-        <LoadingPage v-show="firstLoad" class="loading-wrapper" />
+        <whale v-show="firstLoad" class="loading-wrapper"></whale>
+<!--                <LoadingPage v-show="firstLoad" class="loading-wrapper" />-->
       </transition>
 
       <transition name="fade">
@@ -54,9 +55,10 @@ import Sidebar from '@theme/components/Sidebar'
 import PersonalInfo from '@theme/components/PersonalInfo'
 import Password from '@theme/components/Password'
 import { setTimeout } from 'timers'
+import whale from "../animation/whale";
 
 export default defineComponent({
-  components: { Sidebar, Navbar, Password, PersonalInfo },
+  components: { Sidebar, Navbar, Password, PersonalInfo, whale },
 
   props: {
     sidebar: {

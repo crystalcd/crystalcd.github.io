@@ -2,7 +2,7 @@
   <div class="theme-container" :class="pageClasses">
     <div v-if="!absoluteEncryption">
       <transition name="fade">
-        <whale v-show="true" class="loading-wrapper"></whale>
+        <whale v-show="firstLoad" class="loading-wrapper"></whale>
 <!--                <LoadingPage v-show="firstLoad" class="loading-wrapper" />-->
       </transition>
 

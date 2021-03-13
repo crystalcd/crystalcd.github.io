@@ -24,6 +24,8 @@
 
         <div v-show="showHomePage" :class="{ 'hide': !isHasPageKey }">
             <slot></slot>
+          <Meting/>
+<!--          <APlayer/>-->
         </div>
       </div>
     </div>

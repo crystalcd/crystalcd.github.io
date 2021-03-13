@@ -21,6 +21,7 @@
     "sass-loader": "^11.0.1",
     "vue-click-outside": "1.1.0",
     "vuepress": "1.7.1",
+    "vuepress-plugin-meting": "^0.2.1",
     "vuepress-plugin-smooth-scroll": "^0.0.9"
   },
   "description": "蓝鲸"

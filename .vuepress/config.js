@@ -101,7 +101,6 @@ module.exports = {
     '.vuepress/styles/*.styl', // 使用相对路径
   ],
   plugins: {
-    // 鼠标点击特效
     "meting": {
       meting: {
         // 自动识别

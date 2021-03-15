@@ -93,7 +93,11 @@ module.exports = {
     "authorAvatar": "/avatar.png",
     "record": "****",
     "startYear": "2021",
-    subSidebar: 'auto'//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
+    subSidebar: 'auto',//在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
+    valineConfig: {
+      appId: 'lAQfBrCfFRPcDdH8gj8j0GgH-9Nh9j0Va',// your appId
+      appKey: '8UxHmlD9lYHDM1NLVVAln3ie', // your appKey
+    }
   },
   "markdown": {
     "lineNumbers": true,
